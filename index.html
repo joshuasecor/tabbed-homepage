@@ -1088,11 +1088,13 @@
 		$(document).ready(function() {
 	    $(window).scroll(function(e) {
         var s = $(window).scrollTop(),
-          opacityVal = (s / 70);
-          grayscaleVal = (s / 250);
-          var filterVal = 'blur(' + opacityVal + 'px)';
-          var grayVal = 'grayscale(' + grayscaleVal + ')';
-        $('.hero-image').css('webkitFilter',filterVal + grayVal);
+          // opacityVal = (s / 70);
+          // grayscaleVal = (s / 250);
+          marginVal = (s / (-5));
+        //   var filterVal = 'blur(' + opacityVal + 'px)';
+        //   var grayVal = 'grayscale(' + grayscaleVal + ')';
+        // $('.hero-image').css('webkitFilter',filterVal + grayVal);
+        $('.hero').css('margin-top', marginVal);
 	    });
 		});
 
